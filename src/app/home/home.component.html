@@ -1,0 +1,119 @@
+<header >
+    <div class="container">
+        <a routerLink="" class="logo"><span>h</span>ealth<span>c</span>are</a>
+        <nav class="nav">
+            <ul>
+                <li><a routerLink="">home</a></li>
+                <li><a routerLink="/Appointment">make appointment</a></li>
+                <li><a routerLink="/SignUp">sign up</a></li>
+                <li><a routerLink="/Login">sign in</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="home" id="home">
+    <div class="container-home">
+        <div class="img-home">
+            <img src="assets/hospital.jpg"  alt="" />
+        </div>
+        <div class="content">
+            <h1><span>stay</span> safe, <span>stay</span> healthy.</h1>
+            <h3>caring</h3>
+        </div>
+    </div>
+</section>
+<section class="doctors">
+    <div class="heading"> <h4>Our Doctor</h4> </div>
+    <div class="container-img" (mouseenter)="animate()" >
+    <div class="pic1" >
+        <img [src]="slide.images"  />
+        <div class="info-doc">
+            <h5>name <span>{{slide1.name}}</span></h5>
+            <h5>specialization <span>{{slide1.sptiatization}}</span></h5>
+        </div>
+    </div>
+    <div class="pic2">
+        <img [src]="slide1.images"/>
+        <div class="info-doc">
+            <h5>name <span>{{slide.name}}</span></h5>
+            <h5>specialization <span>{{slide.sptiatization}}</span></h5>
+        </div>
+    </div>
+     <div class="pic3">
+         <img [src]="slide2.images"/>
+         <div class="info-doc">
+            <h5>name <span>{{slide2.name}}</span></h5>
+            <h5>specialization <span>{{slide2.sptiatization}}</span></h5>
+        </div>
+    </div>
+    <div class="pic4">
+        <img [src]="slide3.images"/>
+        <div class="info-doc">
+           <h5>name <span>{{slide3.name}}</span></h5>
+           <h5>specialization <span>{{slide3.sptiatization}}</span></h5>
+       </div>
+   </div>
+</div>
+</section>
+<!--
+<section class="doctors" id="doctors">
+    <div class="heading"> <h4>Our Doctor</h4> </div>
+    <div class="container-fluid">
+        <div class="slider-wrap">
+        <div class="slider-main" id="slidermain" (mouseenter)="animate()" >
+        <div class="slider-item" *ngFor="let slide of slides; let i=last">
+        <div class="docimg">
+           <img src="{{slide.images}}" />"
+        </div>
+        <div class="info-doc">
+            <h5>name <span>{{slide.name}}</span></h5>
+            <h5>scpelzation <span>{{slide.sptiatization}}</span></h5>
+        </div>
+    </div>
+    
+    </div>
+    
+    </div>
+</div>
+</section>-->
+
+<section class="about" id="about">
+<div class="container-about">
+<div class="content-about">
+<div class="box">
+<h3> <i class="fas fa-ambulance"></i> ambulance services</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+</div>
+<div class="box">
+    <h3> <i class="fas fa-procedures" ></i> emergency rooms </h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+</div>
+<div class="box">
+    <h3> <i class="fas fa-procedures" ></i> emergency rooms </h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+</div>
+</div>
+<div class="pic-about">
+    <img src="assets/pic.png"  alt="">
+</div>
+</div>
+</section>
+<section class="footer">
+ <div class="info">
+    <h5> our contact</h5><br>
+    <h6>phone number :<span> 7878990</span> </h6><br>
+    <h6> Email :<span> hospital@gmail.com</span></h6>
+ </div>
+<div class="footer-icon">
+    <a href="">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="40" height="40" viewBox="0 0 512 512">
+        <title></title>
+        <g id="icomoon-ignore"></g>
+        <path d="M304 96h80v-96h-80c-61.757 0-112 50.243-112 112v48h-64v96h64v256h96v-256h80l16-96h-96v-48c0-8.673 7.327-16 16-16z"/>
+        </svg></a>
+    <a href="">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="40" height="40" viewBox="0 0 512 512">
+        <title></title>
+        <g id="icomoon-ignore"></g>
+        <path d="M256 0c-88.366 0-160 71.634-160 160 0 160 160 352 160 352s160-192 160-352c0-88.366-71.635-160-160-160zM256 258c-54.124 0-98-43.876-98-98s43.876-98 98-98 98 43.876 98 98-43.876 98-98 98zM194 160c0-34.242 27.758-62 62-62s62 27.758 62 62c0 34.242-27.759 62-62 62s-62-27.758-62-62z"/>
+        </svg></a>
+</div>
+    </section>
+        
